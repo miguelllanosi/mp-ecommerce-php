@@ -52,6 +52,7 @@ require __DIR__ .  '/vendor/autoload.php';
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('TEST-6131617795804756-101621-8c95d41fe3864338d46bde590b70eb5d-103005416');
 ?>
+    
 <?php
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
@@ -294,12 +295,7 @@ $preference->save();
                                             <input type="hidden" name="title" value="Samsung Galaxy S9">
                                             <input type="hidden" name="price" value="15000">
                                             <input type="hidden" name="unit" value="1">
-                                            <button type="submit" class="mercadopago-button" formmethod="post"><form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
-   data-preference-id="<?php echo $preference->id; ?>">
-  </script>
-</form>Comprar</button>
+                                            <button type="submit" class="mercadopago-button" formmethod="post">Comprar</button>
                                             
                                         </form>
                                     </div>

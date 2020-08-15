@@ -119,6 +119,13 @@ $preference->save();
 
                             </div>
                         </div>
+                        
+                        <form action="/procesar-pago" method="POST">
+  <script
+   src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
+   data-preference-id="<?php echo $preference->id; ?>">
+  </script>
+</form>
                         <div class="as-accessories-results  as-search-desktop">
                             <div class="column as-search-filters" aria-hidden="false" id="as-search-filters" style="position: relative;">
 
